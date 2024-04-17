@@ -4,6 +4,7 @@ import {
   Platform,
   type ViewStyle,
 } from 'react-native';
+import LoginScreen from './LoginScreen';
 
 const LINKING_ERROR =
   `The package 'react-native-verified' doesn't seem to be linked. Make sure: \n\n` +
@@ -24,3 +25,5 @@ export const VerifiedView =
     : () => {
         throw new Error(LINKING_ERROR);
       };
+
+export {LoginScreen};
